@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.hero-bg{
+  background-image: url('./assets/V4zJMvjB_4x.jpg');
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: multiply;
+ 
+}
+
+

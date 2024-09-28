@@ -1,0 +1,61 @@
+/* Define color variable */
+:root {
+    --color: #1377bb; /* Define the color as a CSS variable for easier maintenance */
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 1rem 1.75rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1377bb; /* Use the CSS variable */
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0d6efd; /* darken(#0cf, 15%) */
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    color: #fff;
+  }
+  
+  .button:hover::before {
+    width: 100%;
+  }
+
+
+
+
+
+
+  
+
+  
