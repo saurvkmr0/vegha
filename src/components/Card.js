@@ -6,7 +6,7 @@ const Card = () => {
     <div className="hover:bg-gray-300 rounded-lg">
 
     
-      <div class="relative py-20 min-w-[320px]  bg-blue-500 text-white p-6 rounded-t-lg shadow-lg overflow-hidden skewed-card">
+      <div class="relative py-20 min-w-[320px]  bg-[#0d6efd] text-white p-6 rounded-t-lg shadow-lg overflow-hidden skewed-card">
     {/* <!-- Card Content --> */}
     <div class="relative z-10">
         <div class="flex justify-center items-center mb-4">

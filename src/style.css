@@ -12,17 +12,57 @@ body{
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #ff5722;
+  background-color: #229cff;
   pointer-events: none;
   transition: transform 0.1s ease-out;
 }
 
 .hero-bg{
-  background-image: url('./assets/annie-spratt-QckxruozjRg-unsplash.jpg');
+  background-image: url('./assets/hero-bg-2.jpg');
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5); 
   background-blend-mode: multiply;
 
 }
+
+/* image glare CSS */
+@keyframes glareAnimation {
+  0% {
+      background-position: -100% -100%;
+  }
+  100% {
+      background-position: 100% 100%;
+  }
+}
+
+.animate-glare:hover {
+  animation: glareAnimation 1000ms linear 1 forwards;
+  background-size: 200% 200%; /* Double size for animation */
+}
+
+/* ribbon css */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the default position */
+  }
+  100% {
+    transform: translateX(-100%); /* Scroll all the way out */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite; /* Adjust speed as needed */
+  display: flex;
+  width: 200%; /* Double width for seamless looping */
+}
+
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white; /* Outline stroke */
+  text-stroke: 1px white; /* Fallback */
+}
+
+
+
 
 

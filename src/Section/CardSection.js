@@ -9,6 +9,7 @@ const CardSection = () => {
         <Card />
         <Card />
         <Card />
+        <Card />
 
     </div>
   )

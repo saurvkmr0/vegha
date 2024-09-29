@@ -23,7 +23,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1377bb; /* Use the CSS variable */
+    background-color: #0d6efd; /* Use the CSS variable */
     border-radius: 10rem;
     z-index: -2;
   }
@@ -35,7 +35,7 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #0d6efd; /* darken(#0cf, 15%) */
+    background-color: #1377bb; /* darken(#0cf, 15%) */
     transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
