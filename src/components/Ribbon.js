@@ -10,7 +10,7 @@ const Ribbon = () => {
     <div className="relative overflow-hidden bg-primeBlue h-14 lg:h-28 flex items-center font-bold text-white text-xl lg:text-6xl my-16">
         <div className="absolute whitespace-nowrap animate-scroll px-8 flex gap-20 items-center">
             <span className="mr-8">DATA TRACKING SECURITY</span>
-            <p className='text-4xl'><FaDotCircle className='text-white'/></p>
+            <p className='text-xl lg:text-4xl'><FaDotCircle className='text-white'/></p>
 
             <span className="mr-8 stroke-text">IT MANAGEMENT SERVICES</span>
             <p className=' text-xl lg:text-4xl'><FaStarOfLife className='text-white'/></p>

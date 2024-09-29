@@ -4,6 +4,7 @@ import MouseTracker from './components/MouseTracker'
 import CardSection from './Section/CardSection'
 import AboutSection from './Section/AboutSection'
 import Ribbon from './components/Ribbon'
+import ServicesSection from './Section/ServicesSection'
 
 
 const Container = () => {
@@ -14,6 +15,7 @@ const Container = () => {
       <CardSection />
       <AboutSection />
       <Ribbon/>
+      <ServicesSection />
     </div>
   )
 }
