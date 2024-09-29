@@ -3,14 +3,22 @@
 @tailwind utilities;
 
 
-
+.tracking-dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ff5722;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+}
 
 .hero-bg{
-  background-image: url('./assets/V4zJMvjB_4x.jpg');
+  background-image: url('./assets/annie-spratt-QckxruozjRg-unsplash.jpg');
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5); 
   background-blend-mode: multiply;
- 
+
 }
 
 
