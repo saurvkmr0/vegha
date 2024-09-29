@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+body{
+  overflow-x: hidden;
+}
+
 .tracking-dot {
   position: absolute;
   width: 15px;

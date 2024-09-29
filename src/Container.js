@@ -1,27 +1,17 @@
 import React from 'react'
 import HeroSection from './Section/HeroSection'
 import MouseTracker from './components/MouseTracker'
+import CardSection from './Section/CardSection'
 
 
 const Container = () => {
   return (
-    <div>
+    <div className='cont'>
       <MouseTracker />
       <HeroSection/> 
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
-      <p>fdsgfd</p>
+      <CardSection />
+      gyuj
+      hgfj
     </div>
   )
 }
