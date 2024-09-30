@@ -23,30 +23,30 @@ const Offering = () => {
         </div>
     </div>
 
-    <div className=" gap-4 pt-4 lg:pt-0 lg:pr-12 flex flex-col xl:justify-between xl:w-1/2 xl:py-36 text-white">
+    <div className=" gap-6 pt-4 lg:pt-0 lg:pr-12 flex flex-col xl:justify-between xl:w-1/2 my-auto text-white">
         <div className="flex flex-col gap-4">
             <BlueHrLine />
-            <p className='text-lg font-semibold md:text-xl'>What We’re offering</p>
-            <p className='text-3xl font-bold md:text-5xl lg:text-6xl 2xl:text-7xl'>Let’s overcome your tech challanges</p>
+            <p className='text-lg font-semibold md:text-lg'>What We’re offering</p>
+            <p className='text-4xl font-bold md:text-4xl lg:text-4xl xl:text-5xl'>Let’s overcome your tech challanges</p>
         </div>
-            <p className='text-lg md:text-xl'>The most eminent technology and solutions consultant service The most eminent technology and solutions consultant service suffered</p>
+            <p className='text-base md:text-lg'>The most eminent technology and solutions consultant service The most eminent technology and solutions consultant service suffered</p>
                 <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10">
-                    <div className="flex justify-start items-center text-4xl lg:text-7xl text-primeBlue group-hover:text-white xl:max-w-[350px]">
-                        <div className="p-4 bg-gray-600 bg-opacity-30 rounded-[100%] mr-8"><PiHandCoinsDuotone className='font-light' /></div>
-                        <p className='text-2xl lg:text-3xl text-white font-semibold'>Web Development</p>
+                    <div className="flex justify-start items-center text-2xl lg:text-5xl text-primeBlue group-hover:text-white xl:max-w-[350px]">
+                        <div className="p-4 bg-gray-600 bg-opacity-30 rounded-[100%] mr-4"><PiHandCoinsDuotone className='font-light' /></div>
+                        <p className='text-lg lg:text-xl text-white font-semibold'>Web Development</p>
                     </div>
-                    <div className="flex justify-start items-center text-4xl lg:text-7xl text-primeBlue group-hover:text-white xl:max-w-[350px]">
-                        <div className="p-4 bg-gray-600 bg-opacity-30 rounded-[100%] mr-8"><RxGlobe className='font-light' /></div>
-                        <p className='text-2xl lg:text-3xl text-white font-semibold'>Internal Networking</p>
+                    <div className="flex justify-start items-center text-2xl lg:text-5xl text-primeBlue group-hover:text-white xl:max-w-[350px]">
+                        <div className="p-4 bg-gray-600 bg-opacity-30 rounded-[100%] mr-4"><RxGlobe className='font-light' /></div>
+                        <p className='text-lg lg:text-xl text-white font-semibold'>Internal Networking</p>
                     </div>
                 </div>
-            <p className='text-lg md:text-xl'>The most eminent technology and solutions consultant service The most eminent technology and solutions consultant service suffered</p>
+            <p className='text-base md:text-lg'>The most eminent technology and solutions consultant service The most eminent technology and solutions consultant service suffered</p>
         <div className="">
-            <p className="flex items-center gap-4 text-lg md:text-xl font-normal pb-2"><FaCheckCircle className='text-primeBlue text-2xl'/>Mistakes To Avoid to the dummy printing has bees ind</p>
-            <p className="flex items-center gap-4 text-lg md:text-xl font-normal pb-2"><FaCheckCircle className='text-primeBlue text-2xl'/>Your Startup industry standard loream saum</p>
-            <p className="flex items-center gap-4 text-lg md:text-xl font-normal pb-2"><FaCheckCircle className='text-primeBlue text-2xl'/>Knew About Fonts text the printing and something do</p>
+            <p className="flex items-center gap-4 text-lg md:text-lg font-normal pb-2"><FaCheckCircle className='text-primeBlue text-2xl'/>Mistakes To Avoid to the dummy printing has bees ind</p>
+            <p className="flex items-center gap-4 text-lg md:text-lg font-normal pb-2"><FaCheckCircle className='text-primeBlue text-2xl'/>Your Startup industry standard loream saum</p>
+            <p className="flex items-center gap-4 text-lg md:text-lg font-normal pb-2"><FaCheckCircle className='text-primeBlue text-2xl'/>Knew About Fonts text the printing and something do</p>
         </div>
-        <button className='button font-bold text-base py-4 px-8 max-w-[250px] 2xl:w-[240px]'>CONTACT US</button>
+        <button className='button font-bold text-base py-4 px-6 max-w-[200px] 2xl:w-[200px]'>CONTACT US</button>
     </div>
 </div>
 )
