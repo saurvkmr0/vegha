@@ -4,10 +4,10 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Card = ({icon,heading,subheading}) => {
   return (
-    <div className="hover:bg-gray-300 transition-colors ease-in duration-300 rounded-lg">
+    <div className="hover:bg-primeBlue transition-colors ease-in duration-300 rounded-lg">
 
     
-      <div class=" relative py-20 min-w-[320px] bg-[#fcfcfc] text-primeBlue hover:bg-primeBlue transition-colors ease-in duration-300 hover:text-white p-6 rounded-t-lg shadow-lg overflow-hidden skewed-card">
+      <div class=" relative py-20 min-w-[320px] bg-primeBlue text-[#fcfcfc]  hover:bg-[#fcfcfc]  transition-colors ease-in duration-300 hover:text-primeBlue p-6 rounded-t-lg shadow-lg overflow-hidden skewed-card">
     {/* <!-- Card Content --> */}
     <div class="relative z-10 ">
         <div class="flex justify-center items-center mb-4">
