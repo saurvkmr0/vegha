@@ -9,6 +9,7 @@ import Projects from './Section/Projects'
 import Pricing from './Section/Pricing'
 import Offering from './Section/Offering'
 import Consultation from './Section/Consultation'
+import Footer from './Section/Footer'
 
 
 const Container = () => {
@@ -20,10 +21,11 @@ const Container = () => {
       <AboutSection />
       <Ribbon/>
       <ServicesSection />
-      <Projects/>
+      {/* <Projects/> */}
       <Pricing />
       <Offering/>
       <Consultation />
+      <Footer/>
     </div>
   )
 }

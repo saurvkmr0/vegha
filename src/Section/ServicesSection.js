@@ -6,6 +6,7 @@ import { RxGlobe } from "react-icons/rx";
 import { GrShieldSecurity } from "react-icons/gr";
 
 const ServicesSection = () => {
+  
   return (
     <div className="">
       <SectionHeading subHeading="Services we provide" heading="Explore Our Services For Modern Technology"/>

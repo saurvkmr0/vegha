@@ -2,9 +2,33 @@ import React from 'react'
 import AboutImg from '../assets/about-img.jpg'
 import { FaCheckCircle } from "react-icons/fa";
 import BlueHrLine from '../components/BlueHrLine';
+import { useEffect, useRef } from 'react';
 
 
 const AboutSection = () => {
+
+    const ref = useRef(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                    observer.unobserve(entry.target); // Stop observing once the animation is triggered
+                }
+            });
+        });
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
+
   return (
 <div className="px-4 lg:px-8 xl:px-40 xl:flex">
     <div className="w-full xl:w-1/2 relative">
@@ -26,7 +50,7 @@ const AboutSection = () => {
         <div className="flex flex-col gap-4 ">
             <BlueHrLine />
             <p className='text-gray-500 text-xl font-semibold md:text-lg'>ABOUT US</p>
-            <p className='text-[#2a2a2a] text-3xl font-bold md:text-3xl lg:text-4xl'>Empowering businesses through innovative</p>
+            <p className='text-[#2a2a2a] text-3xl font-bold md:text-3xl lg:text-4xl slide-in-on-scroll' ref={ref}>Empowering businesses through innovative</p>
         </div>
             <p className='text-gray-500 text-lg md:text-lg'>Aliquam eros justo, posuere lobortis viverr augue mattis fermentum non ullamcorper viverra laoreet augue. Aliquam eros justo, posuere lobortis non, viverra laoreet augue mattis fermentum non ullamcorper</p>
         <div className="">

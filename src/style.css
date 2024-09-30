@@ -19,7 +19,7 @@ body{
 }
 
 .hero-bg{
-  background-image: url('./assets/hero-bg-2.jpg');
+  background-image: url('./assets/hero-bg-2.webp');
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5); 
   background-blend-mode: multiply;
@@ -61,6 +61,19 @@ body{
   color: transparent;
   -webkit-text-stroke: 1px white; /* Outline stroke */
   text-stroke: 1px white; /* Fallback */
+}
+
+/* text slid in */
+
+.slide-in-on-scroll {
+  opacity: 0;                     /* Initially hidden */
+  transform: translateX(100px);    /* Position off-screen to the right */
+  transition: opacity 0.8s ease-in, transform 1.2s ease-out;  /* Smooth transition for both properties */
+}
+
+.slide-in {
+  opacity: 1;                     /* Fade in */
+  transform: translateX(0);        /* Slide into place */
 }
 
 

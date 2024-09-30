@@ -3,9 +3,33 @@ import { FaCheckCircle } from "react-icons/fa";
 import BlueHrLine from '../components/BlueHrLine';
 import { PiHandCoinsDuotone } from "react-icons/pi";
 import { RxGlobe } from "react-icons/rx";
+import { useEffect, useRef } from 'react';
 
 
 const Offering = () => {
+
+    const ref = useRef(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-in');
+                    observer.unobserve(entry.target); // Stop observing once the animation is triggered
+                }
+            });
+        });
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
+
   return (
 <div className="px-4 py-4 lg:px-8 2xl:px-40 xl:flex xl:flex-row-reverse bg-[#1a1b1e]">
     <div className=" relative xl:w-1/2">
@@ -27,7 +51,7 @@ const Offering = () => {
         <div className="flex flex-col gap-4">
             <BlueHrLine />
             <p className='text-lg font-semibold md:text-lg'>What We’re offering</p>
-            <p className='text-4xl font-bold md:text-4xl lg:text-4xl xl:text-5xl'>Let’s overcome your tech challanges</p>
+            <p className='text-4xl font-bold md:text-4xl lg:text-4xl xl:text-5xl slide-in-on-scroll' ref={ref}>Let’s overcome your tech challanges</p>
         </div>
             <p className='text-base md:text-lg'>The most eminent technology and solutions consultant service The most eminent technology and solutions consultant service suffered</p>
                 <div className=" flex flex-col lg:flex-row gap-6 lg:gap-10">
