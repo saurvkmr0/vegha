@@ -18,7 +18,7 @@ const ServicesSection = () => {
           <ServiceCard heading="Security System" discp="Leverage agile frameworks to provide a robust synopsis" icon={<GrShieldSecurity />}/>
         </div>
 
-        <div className="hidden 2xl:block"><img className="w-auto" src='https://dev242.kodesolution.com/techon/wp-content/uploads/2024/08/about-img1.png'/></div>
+        <div className="hidden xl:flex xl:justify-center"><img className="object-contain w-full h-full" src='https://dev242.kodesolution.com/techon/wp-content/uploads/2024/08/about-img1.png'/></div>
 
         <div className="mx-4 mt-8 flex flex-col gap-4 xl:w-[392px]">
         <ServiceCard heading="Data Visualization" discp="Leverage agile frameworks to provide a robust synopsis" icon={<GoDatabase />}/>
