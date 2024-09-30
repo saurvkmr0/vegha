@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicesHeading from '../components/ServicesHeading'
+import SectionHeading from '../components/SectionHeading'
 import ServiceCard from '../components/ServiceCard'
 import { GoDatabase } from "react-icons/go";
 import { RxGlobe } from "react-icons/rx";
@@ -8,7 +8,7 @@ import { GrShieldSecurity } from "react-icons/gr";
 const ServicesSection = () => {
   return (
     <div className="">
-      <ServicesHeading />
+      <SectionHeading subHeading="Services we provide" heading="Explore Our Services For Modern Technology"/>
       
       <div className="lg:flex lg:justify-around w-full lg:px-[120px] my-16">
 

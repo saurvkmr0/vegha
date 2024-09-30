@@ -5,6 +5,10 @@ import CardSection from './Section/CardSection'
 import AboutSection from './Section/AboutSection'
 import Ribbon from './components/Ribbon'
 import ServicesSection from './Section/ServicesSection'
+import Projects from './Section/Projects'
+import Pricing from './Section/Pricing'
+import Offering from './Section/Offering'
+import Consultation from './Section/Consultation'
 
 
 const Container = () => {
@@ -16,6 +20,10 @@ const Container = () => {
       <AboutSection />
       <Ribbon/>
       <ServicesSection />
+      <Projects/>
+      <Pricing />
+      <Offering/>
+      <Consultation />
     </div>
   )
 }
