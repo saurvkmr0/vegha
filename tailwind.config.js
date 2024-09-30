@@ -1,4 +1,5 @@
 module.exports = {
+  purge: ['./src/**/*.html', './src/**/*.jsx', './src/**/*.js'],
   content: ['./src/**/*.{js,jsx,ts,tsx}'],  // Include your JSX/TSX files
   theme: {
     extend: {
